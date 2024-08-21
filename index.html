@@ -9,13 +9,94 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                manrope: ["Manrope", "sans-serif"]
+              },
+              colors: {
+                primary: '#ABEF5F',
+                title: '#212121',
+                description: '#494949',
+                secondary: 'rgba(171, 239, 95, 0.5);',
+              }
+            }
+          }
+        }
+      </script>
 
     <!-- Manrope Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d0af1096ef.js" crossorigin="anonymous"></script>
 </head>
 <body class="font-manrope">
-    <p class="text-green">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, nihil! Harum, adipisci tempora illum explicabo et itaque vel magni quo mollitia ducimus totam quas provident similique earum voluptatum quod atque quidem. Delectus perferendis corporis voluptate officiis, accusamus quo consequatur debitis.</p>
+    <header class="container mx-auto px-4 py-4 lg:px-0">
+        <nav>
+            <div class="navbar bg-transparent flex items-center">
+                <div class="navbar-start">
+                  <a class="btn btn-ghost text-3xl font-extrabold">
+                    <i class="fa-solid fa-arrow-right bg-primary p-1 rounded-full text-title -rotate-45"></i>
+                    Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                      <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="hidden lg:flex items-center gap-5">
+                        <i class="fa-solid fa-magnifying-glass p-2 border border-[#e9e9e9] rounded-full"></i>
+                        <i class="fa-solid fa-cart-shopping p-2 border border-[#e9e9e9] rounded-full"></i>
+                        <a class="btn bg-primary text-lg font-bold rounded-full">Book Consult
+                            <i class="fa-solid fa-arrow-right bg-title p-1 rounded-full text-white -rotate-45"></i>
+                        </a>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow w-52 right-12">
+                          <li><a>Home</a></li>
+                          <li><a>Services</a></li>
+                          <li><a>Portfolio</a></li>
+                          <li><a>Blogs</a></li>
+                          <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
